@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.firstCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgW {
+  width: 100%;
+}
+.logoW {
+  width: 50%;
+}
+.opacityD {
+  opacity: 0;
+}
+.scaleD {
+  transform: scale(0);
+}
+.containerD {
+  background-image: url("./img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.femaleW {
+  width: 70%;
+  padding-bottom: 300px;
+  animation-name: mAnimation;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+.heading1P {
+  position: absolute;
+  left: 0;
+  right: 5000px;
+  margin-left: auto;
+  width: 70%;
+  z-index: 1;
+  animation-name: h1Animation;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.femaleOut {
+  animation-name: FOAnimation;
+  animation-duration: 0.5s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.heading1POut {
+  animation-name: headingFOut;
+  animation-duration: 0.8s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+.heading2P {
+  position: absolute;
+  left: 4000px;
+  bottom: -20px;
+  width: 70%;
+  animation-name: heading2ani;
+  animation-duration: 0.8s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+.subhead {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  width: 70%;
+  animation-name: subheading;
+  animation-duration: 0.8s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+.learn {
+  position: absolute;
+  right: 450px;
+  bottom: 40px;
+  width: 30%;
+  animation-name: learnA;
+  animation-duration: 0.8s;
+  animation-delay: 6.3s;
+  animation-fill-mode: forwards;
+}
+.logo {
+  position: absolute;
+  right: 4000px;
+  top: -40px;
+  width: 30%;
+  animation-name: logoA;
+  animation-duration: 0.8s;
+  animation-delay: 6.8s;
+  animation-fill-mode: forwards;
+}
+.replay {
+  position: absolute;
+  right: 500px;
+  bottom: -10px;
+  width: 20%;
+  animation-name: replayA;
+  animation-duration: 0.5s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+/* female */
+@media screen and (max-width: 512px) {
+  .femaleW {
+    width: 300px;
+  }
+}
+@keyframes mAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* femaleOut */
+@keyframes FOAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* h1 */
+@keyframes h1Animation {
+  0% {
+    right: 5000px;
+  }
+  100% {
+    right: 150px;
+  }
+}
+/* h1out */
+@keyframes headingFOut {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+/* heading 2  */
+@keyframes heading2ani {
+  0% {
+    left: 4000px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+/* subheading */
+@keyframes subheading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes learnA {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* logo */
+@keyframes logoA {
+  0% {
+    right: 4000px;
+  }
+  100% {
+    right: 250px;
+  }
+}
+@keyframes replayA {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
